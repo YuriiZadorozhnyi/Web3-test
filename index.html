@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="./styles.css">
+	<script src="./node_modules/web3/dist/web3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js"></script>
+</head>
+
+<body ng-app="web3Test" ng-controller="myCtrl">
+	<div class="container">
+		<div class="col-md-12">
+
+			<table class="center">
+				<tr class="wallet" ng-repeat="wallet in wallets">
+					<td>{{wallet.address}}</td>
+					<td>{{wallet.balance}}</td>
+				</tr>
+			</table>
+
+			<button class="button" ng-click="sendTransaction()">
+				Send Transaction
+			</button>
+
+			<button class="button" ng-click="getTransactions()">
+				Get Transactions
+			</button>
+
+			<button class="button" ng-click="getBalance()">
+				Get Balance
+			</button>
+
+		</div>
+	</div>
+	<script src="./app.js"></script>
+</body>
+</html>

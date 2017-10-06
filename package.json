@@ -1,0 +1,14 @@
+{
+  "name": "web3-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yurii",
+  "license": "ISC",
+  "dependencies": {
+    "web3": "^0.20.2"
+  }
+}
